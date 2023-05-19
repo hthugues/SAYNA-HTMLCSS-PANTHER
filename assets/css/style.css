@@ -1,1 +1,317 @@
-/* insersion des polices */
+/* insersion des polices et déclaration des couleurs*/
+@font-face {
+    font-family: 'beyno';
+    src: url(../fonts/BEYNO.ttf);
+}
+@font-face {
+    font-family: 'cantarell';
+    src: url(../fonts/Cantarell-Regular.ttf);
+}
+@font-face {
+    font-family: 'pantera';
+    src: url(../fonts/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../fonts/Wakanda.ttf);
+}
+
+:root{
+    --mauve-claire:#F2CEF2;
+    --mauve:#9E91B7;
+    --rose:#DF99F2;
+    --bleu-fonce:#3D2DA6;
+    --bleu-marine:#07338C;
+    --bleu-nuit:#021740;
+}
+
+
+/*structure de base pour les balises container, et body, nav et footer*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+.container-fluid{
+    width: 100%;
+    display: inline-flex;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding: auto;
+    display: flex;
+}
+
+body{
+    background-image: url(../images/all-pages/arrière_plan.png);
+    overflow-x: hidden;
+}
+
+footer{
+    background-image: url(../images/all-pages/back_footer.png);
+    height: 500px;
+    padding: 100px;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+    font-weight: 600;
+}
+
+.taille70{
+    width: 65%;
+}
+.taille30{
+    width:35%;
+}
+
+.espacehaut200{
+    margin-top: 200px;
+}
+/*Titre et paragraphe*/
+h1{
+    font-family: 'pantera';
+    font-size: 56px;
+    color:#9E91B7;
+    font-weight: 400;
+
+}
+
+h2{
+    font-family: 'beyno';
+    font-size: 20px;
+    color:#9E91B7;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+h3{
+    font-family: 'cantarell';
+    font-size: 20px;
+    color:var(--bleu-nuit);
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+p{
+    font-family: 'cantarell';
+    font-size: 13px;
+}
+
+/*Menu*/
+.menu {
+    display: flex;              
+    padding:0;                      
+}
+
+.menu li {
+    list-style-type: none ;
+}
+
+.menu a {
+    display:block;
+    font-family: 'beyno';
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0px 30px;
+    font-size:14px;
+}
+
+/*Hero de la page d'accueil*/
+.hero{
+    display: flex;
+}
+
+.hero2{
+    background-image: url(../images/wakanda/Pantherwakanda1.png);
+    height: 500px;
+    
+}
+
+.alignement{
+    margin: auto;
+    padding: auto;
+}
+
+/*Personnages*/
+.personnage{
+    background-color: var(--bleu-nuit);
+    height: 220px;
+    margin-bottom: 20px;
+    margin-left:8%;
+    padding-left:2%;
+    display: flex;
+    width: 2100px;
+}
+
+.divperso{
+    height:100%;
+    margin-right: 20px;
+}
+
+.divperso:hover{
+    height:130%;
+    margin-top: -35px;
+
+}
+.imgperso{
+    height: 100%;
+    transition: transform .1s;
+}
+
+.divdescperso{
+    width: 300px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.biographie{
+    text-align: justify;
+    margin-right:100px;
+}
+
+.carte{
+    text-align: center;
+}
+
+.carteimg{
+    width: 85%;
+    text-align: center;
+    filter: drop-shadow(0px 0px 2px #021740);
+}
+
+.cartedesc{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 600px;
+    border-radius: 20px;
+    margin-top: -60%;
+    color: var(--bleu-nuit);
+    padding-top: 60%;
+    text-align: center;
+}
+
+.contactform{
+    width: 900px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 150px;
+    text-align: center;
+    margin: 100px auto;
+    padding: 40px;
+}
+
+.elementform{
+    border-radius: 38px;
+    margin: 15px;
+    height: 56px;
+    width: 520px;
+    border: 1px solid var(--bleu-nuit);
+    padding-left: 25px;
+}
+
+#textform{
+    height: 200px;
+    border-radius: 22px;
+    color: var(--bleu-nuit);
+    padding-top: 10px;
+}
+
+#buttonenvoyer{
+    width: 174px;
+    color: var(--bleu-nuit);
+    background-color: var(--mauve-claire);
+    padding-left: auto;
+    border-radius: 38px;
+    margin: 5px;
+    height: 34px;
+    border: 0;
+
+}
+
+.backgroundform{
+    background-image: url(../images/accueil/Pantherhome7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+/*Bouton*/
+.button-17 {
+    align-items: center;
+    color: var(--bleu-nuit);
+    appearance: none;
+    background-color: var(--mauve-claire);
+    border-radius: 38px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-weight: 600;
+    height: 54px;
+    justify-content: center;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 174px;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .button-17:hover {
+    filter: drop-shadow(0px 0px 20px #021740);
+  }
+  
+  /* footer*/
+  .divfooter{
+    background-image: url(../images/all-pages/footer1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width:250px;
+    border: 1px solid white;
+    padding: auto;
+    
+  }
+
+  .imgfooterlogo{
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 40%;
+  }
+
+  .border{
+    border: 1px solid white;
+  }
+
+  .titrefooter{
+    letter-spacing: 28%;
+    font-size: 22px;
+  }
+
+  .footerdisposition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  
+
+  
